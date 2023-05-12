@@ -1,0 +1,106 @@
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  grid-column-gap: 0px;
+  background-color: #eeedeb;
+  width: 400px;
+  height: 370px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.54);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  gap: 20px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid #44babc;
+  border-radius: 50px;
+  color: #44babc;
+  cursor: pointer;
+}
+
+body {
+  background-color: #cce2e2;
+}
+
+button:hover {
+  background-color: #44babc;
+  color: white;
+}
+
+
+button:active {
+  background-color: #555;
+}
+
+button[type="submit"] {
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+  background-color: #008cba;
+}
+
+button[value="C"] {
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 1;
+  background-color: #f44336;
+  color: white;
+}
+
+#enter-button img {
+  width: 24px;
+  height: 24px;
+}
+
+form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  width: 300px;
+}
+
+input[type="password"] {
+  margin-top: 10px;
+  background: none;
+  border: none;
+  width: 200px;
+  font-size: 30px;
+  text-align: center;
+  outline: none;
+  color: #44babc;
+}
+
+.inputBorder {
+  top: 0;
+  position: absolute;
+  width: 200px;
+  border-bottom: 2px solid #44babc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border: 1px solid black;
+}

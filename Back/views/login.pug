@@ -1,0 +1,25 @@
+head
+  meta(charset='utf-8')
+  title TechMan
+  script(src="login_script.js") 
+  link(rel='stylesheet' href='login_style.css')
+body
+  main
+    img(class="logo" src="./assets/techman.png" alt="Logo")
+    form(action="/entrar" method="POST" id="login-form" class="form model")
+      div(class="inputBorder")
+        input(type='password' name="senha" id='senha' readonly)
+      .keyboard
+        button(type='button' value='1' onclick='addChar("1")') 1
+        button(type='button' value='2' onclick='addChar("2")') 2
+        button(type='button' value='3' onclick='addChar("3")') 3
+        button(type='button' value='4' onclick='addChar("4")') 4
+        button(type='button' value='5' onclick='addChar("5")') 5
+        button(type='button' value='6' onclick='addChar("6")') 6
+        button(type='button' value='7' onclick='addChar("7")') 7
+        button(type='button' value='8' onclick='addChar("8")') 8
+        button(type='button' value='9' onclick='addChar("9")') 9
+        button(type='button' value='0' onclick='addChar("0")') 0
+        button(type='button' value='C' onclick='clearInput()') C
+        button(type='button' value='Enter' id='enter-button' onclick='submitForm()')
+          img(src="https://cdn-icons-png.flaticon.com/512/60/60539.png" alt="enter")

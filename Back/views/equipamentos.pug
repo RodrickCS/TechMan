@@ -1,0 +1,71 @@
+html(lang="pt-BR")
+  head
+    meta(charset='utf-8')
+    title TechMan
+    link(rel='stylesheet' href='equipamentos_style.css')
+  body
+    header
+      nav
+        ul 
+          li(class="li1")
+            img(src="./assets/techman.png" alt="")
+        ul 
+          li(class="li2")
+            h2
+              button(class="btNovo" onclick="openModalCriar()") Novo equipamento
+            button(class="btLogout" onclick="logout()")
+              img(src="./assets/logout_sair.png" alt="")
+    main  
+     each equipamento in dados
+      div(class="container")
+        div(class="imgContainer")
+          img(src=equipamento.imagem, class="imagemContainer" alt="Imagem")
+        div(class="containerBody") 
+          p(class="headerText")=equipamento.equipamento
+          p(class="descText")=equipamento.descricao
+          div(class="containerButtons")
+            button(class="btnContainer" onclick=`fetchComentarios(${equipamento.id})`)
+              img(src="./assets/comentario.png" alt="")
+            button(class="btnContainer btExcluir model" onclick=`excluirEquipamento(${equipamento.id})`)
+              img(src="./assets/deletar.png" alt="")
+
+
+    div(class="backModal model")
+      div(class="modalCriarEquipamento model")
+        h2 Cadastro de equipamento
+        button(class="btClose" onclick="closeModalCriar()")  x
+        input(type="text" class="smallInp inpNome" placeholder="Nome")  
+        input(type="text" class="smallInp inpImagem" placeholder="Endereço da imagem")
+        textArea(class="largeInp inpDescricao" placeholder="Descrição")
+        div 
+          input(type="checkbox" id="checkAtivo")
+          label(for="checkAtivo") Ativo
+        button(class="modalBt" onclick="criarEquipamento()") Cadastrar
+
+      div(class="modalComentarios model")
+        div(class="modalComentarioHeader")
+          h2(style="color: #3b7c80; font-size: 30px; ")  Comentários
+          button(class="btClose" onclick="closeModalComentarios()")  x
+        div(class="modalComentarioBody")
+
+        div(class="modalComentarioFooter")
+          button(class="modalBt" onclick="openModalCriarComentario()") Adicionar comentário
+
+      div(class="modalCriarComentario model")
+        h2(style="color: #3b7c80; font-size: 30px; ")  Cadastro de comentário
+        button(class="btClose" onclick="closeModalCriarComentario()")  x
+
+        input(class="largeInp" id="inpComentario" placeholder="Comentário")
+
+        button(class="modalBt" onclick="cadastrarComentario()") Cadastrar
+
+      div(class="modalConfirm model")
+        h2(style="color: #3b7c80; font-size: 30px; ")  Exclusão de equipamento
+        button(class="btClose" onclick="closeModalComentarios()")  x
+
+        p Atenção! Tem certeza que deseja excluir o equipamento? Essa ação não poderá ser desfeita.
+
+        button(class="btConfirm" onclick="confirmar()") Excluir
+
+
+script(src="equipamentos_script.js") 

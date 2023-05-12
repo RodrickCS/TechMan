@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+nav {
+  background-color: #cce2e2;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #538d91;
+}
+
+ul li {
+  list-style: none;
+}
+
+.li2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.btLogout {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+}
+
+.btLogout img {
+  width: 40px;
+}
+
+.btNovo {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  font-size: 26px;
+  color: #538d91;
+  font-weight: bold;
+}
+
+.btNovo:hover {
+  color: #6a9fa3;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  height: fit-content;
+  border-bottom: 1px solid black;
+  margin: 20px;
+  gap: 10px;
+  font-size: 20px;
+}
+.imagemContainer {
+  width: 260px;
+}
+
+.containerBody {
+  display: flex; 
+  flex-direction: column;
+}
+
+
+
+.btnContainer {
+  background: none;
+  width: 40px;
+  border: none;
+}
+
+.btnContainer img {
+  width: 30px;
+}
+
+.headerText {
+  font-size: 20px;
+  color: #727272;
+}
+
+.descText {
+  white-space: pre-line;
+  font-size: 20px;
+  color: #b7b7b7;
+}
+
+.backModal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #e7e5e55c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalCriarEquipamento {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 47%;
+  width: 50%;
+  padding: 20px;
+}
+
+.modalCriarComentario {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 37%;
+  width: 50%;
+  padding: 20px;
+  gap: 70px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.modalComentarios {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 60%;
+  width: 50%;
+  padding: 20px;
+  gap: 30px;
+}
+.modalConfirm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 60%;
+  width: 50%;
+  padding: 20px;
+  gap: 30px;
+}
+
+.modalComentarioBody{
+  overflow: auto;
+}
+
+input[type="text"] {
+  border: none;
+  background: none;
+  border-bottom: 1px solid #8e8e8e;
+  outline: none;
+}
+input[type="checkbox"] {
+ margin: 20px;
+}
+
+.largeInp {
+  line-height: 60px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #8e8e8e;
+  outline: none;
+}
+
+.smallInp {
+  line-height: 50px;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid #8e8e8e;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 18px;
+  resize: vertical;
+  outline: none;
+}
+
+.btClose {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  font-size: 26px;
+  width: 30px;
+  background: none;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #35797d;
+}
+
+.btClose:hover {
+  color: white;
+  background-color: #35797d;
+  cursor: pointer;
+}
+
+.modalBt {
+  width: 200px;
+  height: 50px;
+  border-radius: 12px;
+  border: none;
+  background-color: #35797d;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.model {
+  display: none;
+}

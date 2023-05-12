@@ -7,7 +7,6 @@
   - XAMPP
   - node.js
   - MySQL
-  - VSCode
 - Abra o repositório clonado com VSCode ou outro editor de código
 - Abra o XAMPP e dê start em MySQL
 - No XAMPP clique em "shell" na direita da janela

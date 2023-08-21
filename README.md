@@ -12,7 +12,7 @@
 - No XAMPP clique em "shell" na direita da janela
 - No console digite:
   - mysql -u root
-- Na pasta docs do terá um "script.sql"
+- Na pasta docs do terá um arquivo chamado "script.sql"
 - Mude o caminho dessa parte do código direcionando para a pasta csv
   - Ex.
     ```sql

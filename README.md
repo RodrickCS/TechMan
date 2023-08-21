@@ -30,7 +30,6 @@
  - Depois de ter feito isso coloque o script no console do shell e espere rodar
 
  - No terminal do seu edtor de código, digite:
-   - cd back
    - npm i
    - nodemon
  - Assim que o console responder "Servidor rodando na porta 3000":

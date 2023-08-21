@@ -2,7 +2,7 @@
 
 ### Feito com pug, node.js e prisma
 
-# Como testar 
+# Como testar localmente
 - Instale:
   - XAMPP
   - node.js

@@ -1,7 +1,7 @@
-const uriCreateEquipamento = "http://localhost:3000/equipamentos/create";
-const uriGetComentarios = "http://localhost:3000/equipamentos/readComments/";
-const uriCreateComentarios = "http://localhost:3000/equipamentos/addComment";
-const uriExcluirEquipamento = "http://localhost:3000/equipamentos/excluir/";
+const uriCreateEquipamento = "https://techman-production.up.railway.app/equipamentos/create";
+const uriGetComentarios = "https://techman-production.up.railway.app/equipamentos/readComments/";
+const uriCreateComentarios = "https://techman-production.up.railway.app/equipamentos/addComment";
+const uriExcluirEquipamento = "https://techman-production.up.railway.app/equipamentos/excluir/";
 
 var idEquipamento;
 
@@ -70,7 +70,7 @@ function closeModalConfirm() {
 }
 
 function logout() {
-  window.location.href = "http://localhost:3000/";
+  window.location.href = "https://techman-production.up.railway.app";
 }
 
 function criarEquipamento() {

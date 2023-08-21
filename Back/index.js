@@ -15,4 +15,4 @@ app
   .use(methodOverride("_method"))
   .use(usuarioRoutes)
   .use(equipamentosRoutes)
-app.listen(3000, () => console.log("Servidor rodando na porta 3000"))
+app.listen(PORT, () => console.log(`Rodando na porta ${PORT}`))

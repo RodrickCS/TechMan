@@ -12,7 +12,7 @@
 - No XAMPP clique em "shell" na direita da janela
 - No console digite:
   - mysql -u root
-- Na pasta docs do terá um "script.sql"
+- Na pasta /docs do terá um arquivo chamado "script.sql"
 - Mude o caminho dessa parte do código direcionando para a pasta csv
   - Ex.
     ```sql
@@ -30,7 +30,6 @@
  - Depois de ter feito isso coloque o script no console do shell e espere rodar
 
  - No terminal do seu edtor de código, digite:
-   - cd back
    - npm i
    - nodemon
  - Assim que o console responder "Servidor rodando na porta 3000":

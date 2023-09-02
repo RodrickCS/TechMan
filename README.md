@@ -14,7 +14,7 @@
   - mysql -u root
 - Na pasta /docs do terá um arquivo chamado "script.sql"
 - Mude o caminho dessa parte do código direcionando para a pasta csv
-- Os arquivos csv estão na pasta /Docs
+- Os arquivos csv estão na pasta /docs
   - Ex.
     ```sql
     LOAD DATA INFILE 'C:/seu/caminho/para/pasta/TechMan/docs/csv/perfis.csv'

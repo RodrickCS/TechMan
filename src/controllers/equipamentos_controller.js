@@ -22,6 +22,7 @@ const criar = async (req, res) => {
 const ler = async (req, res) => {
   try {
     let equip = await prisma.$queryRaw`SELECT * FROM equipamentos WHERE ativo = 1`
+    res.status(201).json(equip).end()
     return equip
   } catch (err) {
     res.status(500).json(err).end()

@@ -1,23 +1,24 @@
- //require("dotenv").config()
-//const PORT = process.env.PORT || 3000
-const express = require("express")
-//const methodOverride = require("method-override")
+import dotenv from "dotenv";
+dotenv.config();
+const PORT: number = parseInt(process.env.PORT as string, 10) || 3000;
 
-// const usuarioRoutes = require("./src/routes/usuarios_routes")
-// const equipamentosRoutes = require("./src/routes/equipamentos_routes")
+import express from "express";
+import methodOverride from "method-override";
 
-const app = express()
+import usuarioRoutes from "./src/routes/usuarios_routes";
+import equipamentosRoutes from "./src/routes/equipamentos_routes";
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
-app.listen(3000, () => console.log("Server ready on port 3000."));
-// app
- // .set("view engine", "pug")
-  //.use(express.json())
-  //.use(express.urlencoded({ extended: true }))
- // .use(express.static("public"))
- // .use(methodOverride("_method"))
- // .use(usuarioRoutes)
-  //.use(equipamentosRoutes)
-// app.listen(PORT, () => console.log(`Rodando na porta ${PORT}`))
+const app = express();
 
-module.exports = app
+app
+  .set("view engine", "pug")
+  .use(express.json())
+  .use(express.urlencoded({ extended: true }))
+  .use(express.static("public"))
+  .use(methodOverride("_method"))
+  .use(usuarioRoutes)
+  .use(equipamentosRoutes);
+
+app.listen(PORT, () => console.log(`Rodando na porta ${PORT}`));
+
+export default app;

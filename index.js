@@ -16,3 +16,5 @@ app
   .use(usuarioRoutes)
   .use(equipamentosRoutes)
 app.listen(PORT, () => console.log(`Rodando na porta ${PORT}`))
+
+module.exports = app
